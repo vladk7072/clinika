@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 1190px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-content {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 36px;
+  line-height: 36px;
+  @extend %mon-500;
+  letter-spacing: -2px;
+  color: #000;
+  margin-bottom: 45px;
+  span {
+    color: #11a89d;
+  }
+  .span-2 {
+    color: #ef3fa8;
+  }
+}
