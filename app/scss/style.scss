@@ -31,6 +31,9 @@
       left: 0;
     }
   }
+  &__btn {
+    display: none;
+  }
 }
 .menu {
   z-index: 10;
@@ -42,7 +45,7 @@
     padding: 18px 10px;
     position: relative;
   }
-  &__item-1:hover{
+  &__item-1:hover {
     .menu__dosc {
       opacity: 1;
       visibility: visible;
@@ -94,7 +97,7 @@
     z-index: -1;
   }
   &__submenu {
-    transition: all .2s;
+    transition: all 0.2s;
     li {
       & + li {
         margin-top: 15px;
@@ -110,7 +113,7 @@
       color: #11a89d;
     }
   }
-  &__dosc-1{
+  &__dosc-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
@@ -136,6 +139,10 @@
     align-items: center;
     justify-content: center;
   }
+  &__menu-wrapper{
+    display: flex;
+    align-items: center;
+  }
   &__link {
     margin-right: 30px;
   }
@@ -151,6 +158,7 @@
   }
   &__menu {
     padding: 0 5px;
+    margin-right: 160px;
   }
   &__menu-list {
     display: flex;
@@ -173,7 +181,6 @@
     flex-direction: column;
   }
   &__contacts-item {
-    width: 100%;
     font-size: 14px;
     line-height: 19px;
     color: #fff;
@@ -233,14 +240,29 @@
   &__copy {
     text-align: center;
     margin-top: 35px;
+    margin-bottom: 15px;
     font-size: 13px;
     line-height: 18px;
     @extend %ope-400;
     color: #c4c4c4;
   }
 }
+.top-mobile {
+  display: none;
+  text-align: center;
+  padding-bottom: 15px;
+  &__title {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    @extend %ope-400;
+    color: #000;
+    span {
+      @extend %ope-700;
+    }
+  }
+}
 .top {
-  background-image: url("../images/top/1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -340,6 +362,7 @@
   &__items {
     max-width: 500px;
     width: 100%;
+    margin-right: 20px;
   }
   &__item {
     & + .news__item {
@@ -439,6 +462,7 @@
 }
 .work {
   padding-bottom: 120px;
+  margin-left: 5px;
   &__wrapper {
     position: relative;
     z-index: 1;
@@ -526,8 +550,7 @@
       background-size: cover;
       width: 14px;
       height: 7px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 16px;
       left: 0;
     }
   }
