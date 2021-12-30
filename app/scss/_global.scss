@@ -28,8 +28,7 @@ main {
 .title {
   font-size: 36px;
   line-height: 36px;
-  @extend %mon-500;
-  letter-spacing: -2px;
+  @extend %beb-400;
   color: #000;
   margin-bottom: 45px;
   span {
